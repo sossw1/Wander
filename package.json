@@ -12,7 +12,7 @@
     "start": "node build/index.js",
     "dev": "env-cmd -f ./config/dev.env nodemon build/index.js",
     "postinstall": "tsc",
-    "build": "cd client && npm run build"
+    "build": "npm install --prefix client && npm run build --prefix client"
   },
   "author": "",
   "license": "MIT",
